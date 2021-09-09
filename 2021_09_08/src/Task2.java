@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * 要经常考虑错误和异常的输入
+ */
 public class Task2 {
     public static void main(String[] args) {
         //冒泡法排序(从小到大)
@@ -13,12 +16,12 @@ public class Task2 {
 
         for (int i = 0; i < array.length - 1; i++) {
             //循环冒泡array.length-1趟
-            for (int j = 0; j < array.length-1-i; j++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 //每冒泡一趟就有一个数归位所以冒泡比较array.length-1-i次
-                if (array[j] > array[j+1]) {
+                if (array[j] > array[j + 1]) {
                     int t = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = t;
+                    array[j] = array[j + 1];
+                    array[j + 1] = t;
                 }
             }
         }
