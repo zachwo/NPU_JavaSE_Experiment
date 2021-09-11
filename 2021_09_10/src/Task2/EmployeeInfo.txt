@@ -1,0 +1,5 @@
+李四 Employee{name='李四', salary=200.0}
+孙七 Employee{name='孙七', salary=500.0}
+张三 Employee{name='张三', salary=100.0}
+王五 Employee{name='王五', salary=300.0}
+赵六 Employee{name='赵六', salary=400.0}
