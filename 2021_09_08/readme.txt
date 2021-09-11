@@ -2,6 +2,12 @@
 用long型运算需加L：100L+20L
 
 
+//精确计算小数（例如银行）使用BigDecimal，参数一定要用字符串
+        BigDecimal bigDecimal1 = new BigDecimal("2.00");
+        BigDecimal bigDecimal2 = new BigDecimal("1.10");
+        System.out.println(bigDecimal1.subtract(bigDecimal2));
+
+
 
 System.out.println((int)(char)(byte)(-1)); // 65535
 
