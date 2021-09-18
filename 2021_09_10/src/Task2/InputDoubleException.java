@@ -1,6 +1,6 @@
 package Task2;
 
-public class InputDoubleException extends Exception{
+public class InputDoubleException extends NumberFormatException{
     public InputDoubleException() {
     }
 

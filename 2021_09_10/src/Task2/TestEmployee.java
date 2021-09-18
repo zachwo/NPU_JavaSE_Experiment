@@ -20,19 +20,11 @@ import java.util.zip.Inflater;
 public class TestEmployee {
 
     public static void main(String[] args) throws IOException {
-        String name;
-        double salary;
 
         HashMap<String, Employee> hm = new HashMap<>();
-        Scanner scan = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
-            name = scan.next();
-            salary = scan.nextDouble();
-            Employee employee = new Employee(name, salary);
-            hm.put(name, employee);
-        }
+        getInPut(hm, 5);
 
-        String addr = "/Users/wangze/Desktop/软件工程技术实验（Java班）/homework3/EmployeeInfo.txt";
+        String addr = "F:/EmployeeInfo.txt";
         File f = new File(addr);
         if (!f.exists()) {
             f.createNewFile();
@@ -48,4 +40,21 @@ public class TestEmployee {
         }
         fw.close();
     }
+
+    public static void getInPut(HashMap<String, Employee> hm, int number) throws InputDoubleException{
+        String name;
+        String salary;  //d = Double.parseDouble(s);
+        double salary1;
+        Scanner scan = new Scanner(System.in);
+
+        for (int i = 0; i < number; i++) {
+            name = scan.next();
+            salary = scan.next();
+            salary1 = Double.parseDouble(salary);
+            Employee employee = new Employee(name, salary1);
+            hm.put(name, employee);
+        }
+    }
+
+
 }
